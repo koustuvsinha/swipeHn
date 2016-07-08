@@ -23,10 +23,13 @@ const styles = StyleSheet.create({
   container: {
     flex : 1,
     justifyContent : 'center',
-    alignItems : 'flex-start'
+    alignItems : 'flex-start',
+    flexDirection: 'row'
   },
   commentBy : {
+    fontWeight: '900'
   },
   commentText : {
+    flex: 1
   }
 });
