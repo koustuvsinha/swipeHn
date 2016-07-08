@@ -9,14 +9,46 @@ import {
 } from 'react-native';
 
 export default class Comments extends Component {
+
+  propTypes : {
+    comments : React.PropTypes.array
+  };
+
+  static get defaultProps() {
+    return {
+      comments : [{by : 'admin',text : 'No comments'},{by : 'admin',text : '.. yet'}]
+    }
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentComment : 0
+    };
+  };
+
+  componentDidMount() {
+    console.log('ok')
+    setInterval(() => {
+      this.nextComment()
+    }, 5000)
+  };
+
+  nextComment() {
+    const newComment = (this.state.currentComment + 1) % this.props.comments.length;
+    this.setState({
+      currentComment : newComment
+    });
+  };
+
   render() {
     return(
       <View style={styles.container}>
-        <Text style={styles.commentBy}>Stephan : </Text>
-        <Text style={styles.commentText}>What do you think about this?</Text>
+        <Text style={styles.commentBy}>{this.props.comments[this.state.currentComment].by} : </Text>
+        <Text style={styles.commentText}>{this.props.comments[this.state.currentComment].text}</Text>
       </View>
     );
-  }
+  };
 }
 
 const styles = StyleSheet.create({
