@@ -13,17 +13,18 @@ import Swiper from 'react-native-swiper';
 export default class SwipeView extends Component {
   render() {
     return (
-      <Swiper style={styles.container} showsButtons={false}>
+      <ScrollView style={styles.container}>
       {[,...Array(10)].map((x, i) =>
         <CardView key={i} />
       )}
-      </Swiper>
+      </ScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 10
+    marginTop: 10,
+    flex: 1
   }
 });
