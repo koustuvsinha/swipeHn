@@ -22,8 +22,9 @@ export default class CardView extends Component {
           <Card.Media
             image={<Image source={{uri:cardImage}}/>}
             overlay
+            height={380}
           >
-          <Text style={[TYPO.paperFontHeadline, COLOR.paperGrey50]}>Oracle gets sued big time</Text>
+          <Text style={[TYPO.paperFontHeadline, COLOR.paperGrey50]}>Facebook to Add End-To-End Encrypted ‘Secret Conversations’ to Messenger App</Text>
           <Text style={[TYPO.paperSubhead, COLOR.paperGrey50]}>81 points by SanderMark 2 hours ago</Text>
           </Card.Media>
           <Card.Body>

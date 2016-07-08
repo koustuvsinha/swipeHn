@@ -24,7 +24,8 @@ const styles = StyleSheet.create({
     flex : 1,
     justifyContent : 'center',
     alignItems : 'flex-start',
-    flexDirection: 'row'
+    flexDirection: 'row',
+    height: 70
   },
   commentBy : {
     fontWeight: '900'
