@@ -4,6 +4,6 @@ swipeHN
 Yet Another HN Client Built with React Native [WIP]
 
 
-# LICENSE
+## LICENSE
 
 [MIT](https://koustuvs.mit-license.org)
