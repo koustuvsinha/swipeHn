@@ -1,7 +1,7 @@
 swipeHN
 ==============
 
-Yet Another HN Client Built with React Native [WIP]
+Yet Another [HN](https://news.ycombinator.com) Client Built with React Native [WIP]
 
 
 ## LICENSE
